@@ -1,0 +1,62 @@
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+.cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat img{
+    width: 400px;
+    height: 200px;
+}
+
+.menu{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu .life-bar{
+    width: 40%;
+    height: 20px;
+    margin: 30px;
+    border: 1px solid rgb(151, 150, 150);
+}
+
+.life{
+    height: 100%;
+    background-color: green;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    color: rgb(248, 239, 239);
+    border: none;
+}
+
+.begin{
+    background-color: rgb(65, 65, 196);    
+}
+.food{
+    background-color: rgb(241, 32, 32);
+}
+
+.care{
+    background-color:rgb(255, 169, 184);
+}
+
+.water{
+    background-color: rgb(55, 55, 170);
+}
+
+.danger{
+    background-color: red;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Gato Game</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" >
+        <div class="cat">
+            <h1>{{cat}}</h1>
+            <img :src="src">
+        </div>
+        <div class="menu">
+            <div class="life-bar">
+                <div class="life" :class="{ danger: life <= 20}" :style="{width: life + '%'}"></div>
+            </div>
+            <div>{{life}}%</div>
+            <div v-if="begin">
+                <button class="button begin" @click="hungry()">Iniciar</button>
+            </div>
+            <div v-else>
+                <button class="button food" @click="food()">Dar comida</button>
+                <button class="button water" @click="food()">Dar água</button>
+                <button class="button care" @click="care()">Dar carinho</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
