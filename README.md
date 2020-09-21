@@ -1,2 +1,2 @@
 ## Jogo-do-Gato
- #Jogo feito em Vue, o objetivo é apenas deixar o gato vivo.
+### Jogo feito em Vue, o objetivo é apenas deixar o gato vivo.
